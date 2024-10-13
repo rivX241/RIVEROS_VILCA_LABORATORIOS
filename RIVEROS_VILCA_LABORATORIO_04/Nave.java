@@ -38,7 +38,7 @@
         }
         @Override
         public String toString(){
-            return "Nombre: "+nombre+"\nFila: "+fila+"\nColumna: "+columna+"\nEstado: "+estado+"\nPuntos: "+puntos
-                    +"\n___________";
+            return "[Nombre: "+nombre+"\tFila: "+fila+"\tColumna: "+columna+"\tEstado: "+estado+"\tPuntos: "+puntos
+                    +"]";
         }
     }
