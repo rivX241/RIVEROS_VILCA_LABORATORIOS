@@ -39,25 +39,7 @@ public class Soldado {
     }
     @Override
     public String toString(){
-        return "[Nombre: "+nombre+"\tFila: "+(fila+1)+"\tColumna: "+(columna+1)+"\tnivel de Vida: "+ nivelVida
-                +"]"+"\n";
-    }
-    public static void creacionEjercito(String[] orden,Soldado[][] ejercito){
-        for (int i = 0; i < orden.length; i++) {
-            for (int j = 0; j < orden[i].length(); j++) {
-                if(ejercito[i][j]!=null&&orden[i].equals(ejercito[i][j].getNombre())){
-                    System.out.print(ejercito[i][j].toString());
-                }
-            }
-        }
-    }
-    public static void mostrarEjercito(boolean[][] posiciones,Soldado[][] ejercito){
-        for(int i = 0; i < posiciones.length; i++){
-            for(int j = 0; j < posiciones.length; j++){
-                if(posiciones[i][j]){
-                    System.out.print(ejercito[i][j].toString());
-                }
-            }
-        }
+        return "[Nombre: "+nombre+"\tFila: "+(fila+1)+"\tColumna: "+(columna+1)+
+                "\tnivel de Vida: "+ nivelVida +"]"+"\n";
     }
 }
